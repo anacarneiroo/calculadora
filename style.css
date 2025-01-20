@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: linear-gradient(to right,rgb(255, 103, 232),rgb(173, 144, 231),blue);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+#calculadora{
+    border: 1px solid white;
+    width: 346.7px;
+}
+
+#resultado{
+    color: white;
+    border: 1px solid white;
+    height: 160px;
+    max-width: 345px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    padding: 10px;
+    font-size: 4em;
+}
+
+#baixo{
+    color: rgb(99, 99, 99);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#numeros{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#numeros > div, #operations > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85px;
+    height: 85px;
+    border: 1px solid white;
+}
+
+#numeros div:hover, #operations div:hover{
+    background-color: white;
+    transition: 1s;
+    transform: translateX(0) scale(1.1);
+}
+
+#operations {
+    display: flex;
+    flex-direction: column;
+}
+
+#operations > div,#ac,#igual{
+    background-color: rgba(255, 255, 255, 0.662);
+}
+
+.numbers{
+    background-color: rgba(255, 255, 255, 0.377);
+}
+
+
+
+
+
+
