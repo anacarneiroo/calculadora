@@ -15,7 +15,7 @@ body{
 
 #calculadora{
     border: 1px solid white;
-    width: 346.4px;
+    width: 350px;
 }
 
 #resultado{
@@ -40,6 +40,8 @@ body{
 #numeros{
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.377);
 }
 
 #numeros > div, #operations > div{
@@ -48,7 +50,6 @@ body{
     justify-content: center;
     width: 85px;
     height: 85px;
-    border: 1px solid white;
 }
 
 #numeros div:hover, #operations div:hover{
@@ -60,15 +61,19 @@ body{
 #operations {
     display: flex;
     flex-direction: column;
+    border: 1px solid white;
 }
 
-#operations > div,#ac,#igual{
-    background-color: rgba(255, 255, 255, 0.662);
+#operations > div{
+    background-color: rgba(255, 255, 255, 0.808);
+    border: 1px solid white;
 }
 
-.numbers{
+.numbers,#ac,#igual{
     background-color: rgba(255, 255, 255, 0.377);
+    border: 1px solid white;
 }
+
 
 
 
