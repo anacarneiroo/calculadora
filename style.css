@@ -4,7 +4,13 @@
 }
 
 body{
-    background-image: linear-gradient(to right,rgb(255, 103, 232),rgb(173, 144, 231),blue);
+    background-image: linear-gradient(50deg,#1D8FF2,#F2F2F2);
+    background-size: 300%;
+    animation-name: animar;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -16,11 +22,13 @@ body{
 #calculadora{
     border: 1px solid white;
     width: 350px;
+    box-shadow: 0px 0px 10px white;
 }
 
 #resultado{
     color: white;
     border: 1px solid white;
+    box-shadow: inset 0px 0px 10px #1d8ff2a3;
     height: 160px;
     max-width: 345px;
     display: flex;
@@ -74,6 +82,14 @@ body{
     border: 1px solid white;
 }
 
+@keyframes animar{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 100% 0;
+    }
+}
 
 
 

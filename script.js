@@ -6,8 +6,6 @@ Array.from(divs).forEach(item => {
     item.addEventListener('click', () => adicionar(item))
 })
 
-
-
 function adicionar(item) {
     const valor = item.textContent
 
@@ -23,10 +21,17 @@ function adicionar(item) {
 function calcular() {
     try{
         const r = Function(`'use strict'; return (${numeros})`)();
-        resultado.innerHTML = r;
+        if(r.toString().includes('.')){
+            resultado.innerHTML = r.toPrecision(5);
+        }
+        
+        else{
+            resultado.innerHTML = r
+        }
+
         numeros = r.toString();
     } catch (error) {
-        window.alert('Não podemos calcular essa expressão.')
+        window.alert('Não é possível calcular essa expressão.')
     }
 }
 
